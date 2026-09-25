@@ -1,7 +1,7 @@
 # SpecRL: Specification-Guided Dense Rewards for VLA Reinforcement Learning
 
 <p align="center">
-  <img src="assets/overview.png" alt="SpecRL Overview" width="100%">
+  <img src="overview.pdf" alt="SpecRL Overview" width="100%">
 </p>
 
 Official implementation of the paper: **"SpecRL: Specification-Guided Dense Rewards for VLA Reinforcement Learning"**.
