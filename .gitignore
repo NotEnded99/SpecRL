@@ -1,0 +1,30 @@
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local environments (uploaded/provisioned separately)
+.venv*/
+.yoloe_venv/
+
+# Training outputs and large runtime assets
+logs/
+results/
+checkpoints/
+wandb/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Local model/data caches
+openpi_data/
+yoloe/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

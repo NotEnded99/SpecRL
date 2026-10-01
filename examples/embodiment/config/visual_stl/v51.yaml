@@ -1,0 +1,197 @@
+# Pure-visual v5.1 AGM reward settings. This config is composed into both
+# env.train and env.eval by the visual PPO experiment.
+agm_reward_source: visual
+visual_stl_monitor: true
+# One-shot reward emitted when visual AGM first reports completion.
+# LIBERO environment success is used only for success metrics.
+visual_stl_completion_bonus: 1.0
+visual_stl_yoloe_per_gpu: true
+visual_stl_yoloe_host: 127.0.0.1
+visual_stl_yoloe_base_port: 8010
+visual_stl_yoloe_timeout_s: 10.0
+visual_stl_yoloe_batch_enabled: true
+visual_stl_yoloe_batch_max_size: 32
+visual_stl_yoloe_raw_transport: true
+visual_stl_camera_name: agentview
+visual_stl_fallback_camera_name: robot0_eye_in_hand
+visual_stl_fallback_min_confidence: 0.10
+visual_stl_mask_to_depth_orientation: rot180
+visual_stl_min_confidence: 0.25
+visual_stl_debug_interval: 0
+# Lossless, pre-overlay RGB export for detector A/B. Disabled in normal
+# evaluation; when enabled it records the exact upright arrays supplied to
+# YOLOE for the primary and fallback cameras.
+visual_stl_export_raw_rgb: false
+visual_stl_raw_rgb_stride: 1
+visual_stl_save_atom_diagnostics: false
+# Causal filtering uses only the current and preceding valid raw margins.
+# Every atom applies a five-sample median, two-sample jump confirmation, and
+# EMA before AGM normalization. Invalid samples never enter the filter.
+visual_stl_temporal_median_window: 5
+visual_stl_temporal_ema_alpha: 0.30
+visual_stl_temporal_max_jump: 0.05
+visual_stl_temporal_jump_confirmation_steps: 2
+visual_stl_temporal_jump_consistency: 0.025
+visual_stl_surface_radius_m: 0.05
+visual_stl_center_radius_m: 0.165
+
+visual_stl_grasp_confirmation_steps: 3
+# Preserve the standard Pick formula. A secondary terminal-closure path only
+# tolerates the measured 1 mm co-motion / 0.5 mm motion boundary miss after
+# two fresh RGB-D frames with the gripper physically closed to <= 5 cm.
+visual_stl_grasp_terminal_width_m: 0.050
+visual_stl_grasp_terminal_comove_slack_m: 0.001
+visual_stl_grasp_terminal_motion_slack_m: 0.0005
+visual_stl_grasp_terminal_confirmation_steps: 2
+visual_stl_on_xy_tolerance_m: 0.06
+visual_stl_on_surface_tolerance_m: 0.038
+visual_stl_on_ordinary_xy_tolerance_m: 0.030
+visual_stl_on_ordinary_xy_uncertainty_m: 0.014
+visual_stl_on_ordinary_min_above_m: -0.005
+visual_stl_on_ordinary_surface_tolerance_m: 0.030
+visual_stl_on_ordinary_require_release: true
+visual_stl_on_ordinary_require_contact: true
+visual_stl_on_ordinary_contact_tolerance_m: 0.010
+visual_stl_on_ordinary_confirmation_steps: 5
+visual_stl_on_confirmation_steps: 3
+visual_stl_on_site_lower_delta_m: -0.22
+visual_stl_on_site_upper_delta_m: 0.09
+
+visual_stl_on_front_x_lower_m: 0.120
+visual_stl_on_front_x_upper_m: 0.240
+visual_stl_on_front_y_lower_m: -0.040
+visual_stl_on_front_y_upper_m: 0.050
+visual_stl_on_front_z_lower_m: -0.030
+visual_stl_on_front_z_upper_m: 0.030
+visual_stl_on_front_confirmation_steps: 7
+
+visual_stl_on_spatial_min_displacement_m: 0.030
+visual_stl_on_spatial_stability_tolerance_m: 0.003
+visual_stl_on_right_min_displacement_m: 0.135
+visual_stl_on_right_released_min_displacement_m: 0.100
+visual_stl_on_right_interior_margin_m: 0.015
+visual_stl_on_right_recovery_slack_m: 0.015
+visual_stl_on_right_recovery_min_displacement_m: 0.160
+visual_stl_on_right_released_slack_m: 0.020
+visual_stl_on_right_release_max_age_steps: 30
+visual_stl_on_right_lateral_padding_m: 0.010
+visual_stl_on_right_max_offset_m: 0.060
+visual_stl_on_right_require_release: false
+visual_stl_on_right_pick_proxy: true
+visual_stl_on_right_confirmation_steps: 5
+
+visual_stl_on_attach_width_m: 0.065
+visual_stl_on_attach_confirmation_steps: 1
+visual_stl_on_release_width_m: 0.075
+visual_stl_on_release_hold_steps: 30
+visual_stl_on_support_cache_steps: 480
+visual_stl_on_require_fresh_after_release: true
+
+visual_stl_in_monitor: true
+visual_stl_in_confirmation_steps: 3
+visual_stl_in_reacquire_gate_m: 0.30
+visual_stl_in_release_history_steps: 5
+visual_stl_in_release_delta_m: 0.003
+visual_stl_in_positive_hold_steps: 3
+visual_stl_in_caddy_release_separation_m: 0.100
+visual_stl_in_caddy_release_confirmation_steps: 3
+visual_stl_in_caddy_release_max_age_steps: 60
+visual_stl_in_caddy_fresh_entry_tolerance_m: 0.030
+visual_stl_in_caddy_opening_tolerance_m: 0.001
+visual_stl_in_caddy_fresh_min_core_lateral_margin_m: 0.040
+visual_stl_in_caddy_fresh_release_max_age_steps: 90
+visual_stl_in_caddy_max_target_displacement_m: 0.040
+visual_stl_in_caddy_settled_confirmation_age_steps: 60
+visual_stl_in_caddy_latched_occlusion_hold_steps: 12
+visual_stl_in_caddy_proxy_entry_tolerance_m: 0.030
+visual_stl_in_caddy_proxy_opening_confirmation_steps: 2
+visual_stl_in_caddy_proxy_release_max_age_steps: 90
+visual_stl_in_caddy_unreleased_ceiling_m: 0.001
+visual_stl_in_caddy_contradiction_margin_m: 0.030
+visual_stl_in_caddy_contradiction_confirmation_steps: 3
+visual_stl_in_inner_shrink_m: 0.010
+visual_stl_in_drawer_inner_shrink_m: 0.010
+visual_stl_in_caddy_inner_shrink_m: 0.008
+visual_stl_in_caddy_back_start_fraction: 0.10
+visual_stl_in_caddy_use_object_footprint: false
+visual_stl_in_min_drawer_points: 40
+visual_stl_in_below_rim_tolerance_m: 0.025
+visual_stl_in_floor_tolerance_m: 0.010
+visual_stl_in_release_width_m: 0.060
+visual_stl_in_use_object_footprint: false
+visual_stl_in_require_release: true
+visual_stl_in_microwave_inner_shrink_m: 0.000
+visual_stl_in_microwave_entry_tolerance_m: 0.005
+visual_stl_in_microwave_front_quantile: 0.90
+visual_stl_in_microwave_min_entry_depth_m: 0.170
+visual_stl_in_microwave_release_max_target_eef_distance_m: 0.100
+visual_stl_in_microwave_occlusion_steps: 8
+visual_stl_in_microwave_release_max_age_steps: 30
+visual_stl_in_microwave_require_release: true
+
+visual_stl_open_monitor: true
+visual_stl_open_displacement_threshold_m: 0.040
+visual_stl_open_extension_axis: y+
+visual_stl_open_bound_quantile: 0.05
+visual_stl_open_min_points: 40
+visual_stl_open_confirmation_steps: 3
+visual_stl_open_hold_steps: 3
+
+visual_stl_close_monitor: true
+visual_stl_close_retraction_threshold_m: 0.040
+visual_stl_close_extension_axis: y-
+visual_stl_close_front_quantile: 0.25
+visual_stl_close_bound_quantile: 0.05
+visual_stl_close_min_points: 40
+visual_stl_close_confirmation_steps: 3
+visual_stl_close_hold_steps: 0
+visual_stl_close_require_in_confirmed: false
+visual_stl_close_mode: articulated_geometry
+visual_stl_close_panel_threshold_fraction: 0.25
+visual_stl_close_panel_edge_quantile: 0.98
+visual_stl_close_panel_min_pixels: 80
+visual_stl_close_panel_min_reference_pixels: 80
+visual_stl_close_panel_max_reference_shift_fraction: 0.10
+visual_stl_close_panel_diagnostic: false
+visual_stl_close_microwave_threshold_fraction: 0.02
+visual_stl_close_microwave_closing_sign: -1
+visual_stl_close_microwave_min_area_ratio: 1.08
+visual_stl_close_microwave_contraction_threshold_fraction: 0.30
+visual_stl_close_microwave_contraction_max_area_ratio: 0.82
+visual_stl_close_microwave_min_pixels: 80
+visual_stl_close_microwave_max_vertical_shift_fraction: 0.12
+visual_stl_close_microwave_edge_quantile: 0.02
+visual_stl_close_microwave_door_progress_threshold: 0.80
+visual_stl_close_microwave_settled_progress_threshold: 0.75
+visual_stl_close_microwave_settled_confirmation_steps: 30
+visual_stl_close_microwave_door_edge_quantile: 0.85
+visual_stl_close_microwave_door_min_edge_contrast: 0.08
+visual_stl_close_microwave_door_min_relative_strength: 0.65
+visual_stl_close_microwave_door_min_open_span_fraction: 0.20
+visual_stl_close_microwave_door_depth_tolerance_px: 8
+visual_stl_close_microwave_door_min_relative_depth_strength: 0.30
+visual_stl_close_microwave_door_search_width_scale: 2.10
+visual_stl_close_microwave_door_search_top_fraction: 0.06
+visual_stl_close_microwave_door_search_bottom_fraction: 0.91
+visual_stl_close_microwave_door_search_min_top_image_fraction: 0.33
+visual_stl_close_microwave_door_dark_intensity_threshold: 0.20
+visual_stl_close_microwave_door_dark_body_density_fraction: 0.40
+visual_stl_close_microwave_door_dark_min_column_pixels: 10
+visual_stl_close_microwave_door_dark_min_open_span_fraction: 0.15
+visual_stl_close_microwave_door_dark_max_column_gap: 3
+
+visual_stl_turnon_monitor: true
+visual_stl_turnon_min_mask_pixels: 40
+visual_stl_turnon_roi_padding_fraction: 0.12
+visual_stl_turnon_grid_rows: 3
+visual_stl_turnon_grid_cols: 4
+visual_stl_turnon_diagnostic_interval: 20
+visual_stl_turnon_red_min_intensity: 0.45
+visual_stl_turnon_red_excess_threshold: 0.18
+visual_stl_turnon_red_fraction_threshold: 0.010
+visual_stl_turnon_confirmation_steps: 3
+
+init_params:
+  camera_heights: 256
+  camera_widths: 256
+  camera_depths: true

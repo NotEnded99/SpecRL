@@ -1,0 +1,3279 @@
+[
+  {
+    "global_id": 0,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "between",
+                    "refs": [
+                      "plate",
+                      "ramekin"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "between",
+          "refs": [
+            "plate",
+            "ramekin"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 1,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl next to the ramekin and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "next_to",
+                    "refs": [
+                      "ramekin"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "next_to",
+          "refs": [
+            "ramekin"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 2,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl from table center and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "from",
+                    "refs": [
+                      "table_center"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "from",
+          "refs": [
+            "table_center"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 3,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl on the cookie box and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "on_the",
+                    "refs": [
+                      "cookie_box"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "on_the",
+          "refs": [
+            "cookie_box"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 4,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "in_the",
+                    "refs": [
+                      "top_drawer",
+                      "wooden_cabinet"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "in_the",
+          "refs": [
+            "top_drawer",
+            "wooden_cabinet"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 5,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl on the ramekin and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "on_the",
+                    "refs": [
+                      "ramekin"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "on_the",
+          "refs": [
+            "ramekin"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 6,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl next to the cookie box and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "next_to",
+                    "refs": [
+                      "cookie_box"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "next_to",
+          "refs": [
+            "cookie_box"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 7,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl on the stove and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "on_the",
+                    "refs": [
+                      "stove"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "on_the",
+          "refs": [
+            "stove"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 8,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl next to the plate and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "next_to",
+                    "refs": [
+                      "plate"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "next_to",
+          "refs": [
+            "plate"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 9,
+    "suite": "libero_spatial",
+    "description": "pick up the black bowl on the wooden cabinet and place it on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl",
+                  "spatial": {
+                    "relation": "on_the",
+                    "refs": [
+                      "wooden_cabinet"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "black_bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "on(black_bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [
+      {
+        "atom": "pick(black_bowl)",
+        "spatial": {
+          "relation": "on_the",
+          "refs": [
+            "wooden_cabinet"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "global_id": 10,
+    "suite": "libero_object",
+    "description": "pick up the alphabet soup and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "alphabet_soup",
+        null
+      ],
+      [
+        "in",
+        "alphabet_soup",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "alphabet_soup"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "alphabet_soup",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "alphabet_soup",
+        null
+      ],
+      [
+        "in",
+        "alphabet_soup",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(alphabet_soup)",
+        "in(alphabet_soup,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 11,
+    "suite": "libero_object",
+    "description": "pick up the cream cheese and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "cream_cheese",
+        null
+      ],
+      [
+        "in",
+        "cream_cheese",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "cream_cheese"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "cream_cheese",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "cream_cheese",
+        null
+      ],
+      [
+        "in",
+        "cream_cheese",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(cream_cheese)",
+        "in(cream_cheese,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 12,
+    "suite": "libero_object",
+    "description": "pick up the salad dressing and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "salad_dressing",
+        null
+      ],
+      [
+        "in",
+        "salad_dressing",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "salad_dressing"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "salad_dressing",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "salad_dressing",
+        null
+      ],
+      [
+        "in",
+        "salad_dressing",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(salad_dressing)",
+        "in(salad_dressing,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 13,
+    "suite": "libero_object",
+    "description": "pick up the bbq sauce and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "bbq_sauce",
+        null
+      ],
+      [
+        "in",
+        "bbq_sauce",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "bbq_sauce"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "bbq_sauce",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "bbq_sauce",
+        null
+      ],
+      [
+        "in",
+        "bbq_sauce",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(bbq_sauce)",
+        "in(bbq_sauce,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 14,
+    "suite": "libero_object",
+    "description": "pick up the ketchup and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "ketchup",
+        null
+      ],
+      [
+        "in",
+        "ketchup",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "ketchup"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "ketchup",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "ketchup",
+        null
+      ],
+      [
+        "in",
+        "ketchup",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(ketchup)",
+        "in(ketchup,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 15,
+    "suite": "libero_object",
+    "description": "pick up the tomato sauce and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "tomato_sauce",
+        null
+      ],
+      [
+        "in",
+        "tomato_sauce",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "tomato_sauce"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "tomato_sauce",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "tomato_sauce",
+        null
+      ],
+      [
+        "in",
+        "tomato_sauce",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(tomato_sauce)",
+        "in(tomato_sauce,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 16,
+    "suite": "libero_object",
+    "description": "pick up the butter and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "butter",
+        null
+      ],
+      [
+        "in",
+        "butter",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "butter"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "butter",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "butter",
+        null
+      ],
+      [
+        "in",
+        "butter",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(butter)",
+        "in(butter,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 17,
+    "suite": "libero_object",
+    "description": "pick up the milk and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "milk",
+        null
+      ],
+      [
+        "in",
+        "milk",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "milk"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "milk",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "milk",
+        null
+      ],
+      [
+        "in",
+        "milk",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(milk)",
+        "in(milk,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 18,
+    "suite": "libero_object",
+    "description": "pick up the chocolate pudding and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "chocolate_pudding",
+        null
+      ],
+      [
+        "in",
+        "chocolate_pudding",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "chocolate_pudding"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "chocolate_pudding",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "chocolate_pudding",
+        null
+      ],
+      [
+        "in",
+        "chocolate_pudding",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(chocolate_pudding)",
+        "in(chocolate_pudding,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 19,
+    "suite": "libero_object",
+    "description": "pick up the orange juice and place it in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "orange_juice",
+        null
+      ],
+      [
+        "in",
+        "orange_juice",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "orange_juice"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "orange_juice",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "orange_juice",
+        null
+      ],
+      [
+        "in",
+        "orange_juice",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(orange_juice)",
+        "in(orange_juice,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 20,
+    "suite": "libero_goal",
+    "description": "open the middle drawer of the cabinet",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "open",
+        null,
+        "cabinet_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "open",
+                  "target": "middle_drawer"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "open",
+        null,
+        "middle_drawer"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "open(middle_drawer)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 21,
+    "suite": "libero_goal",
+    "description": "put the bowl on the stove",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "stove_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "bowl"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "bowl",
+                  "target": "stove"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "bowl",
+        null
+      ],
+      [
+        "on",
+        "bowl",
+        "stove"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(bowl)",
+        "on(bowl,stove)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 22,
+    "suite": "libero_goal",
+    "description": "put the wine bottle on top of the cabinet",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "wine_bottle",
+        null
+      ],
+      [
+        "on",
+        "wine_bottle",
+        "cabinet_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "wine_bottle"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "wine_bottle",
+                  "target": "cabinet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "wine_bottle",
+        null
+      ],
+      [
+        "on",
+        "wine_bottle",
+        "cabinet"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(wine_bottle)",
+        "on(wine_bottle,cabinet)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 23,
+    "suite": "libero_goal",
+    "description": "open the top drawer and put the bowl inside",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "in",
+        "black_bowl",
+        "cabinet_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "bowl"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "bowl",
+                  "target": "top_drawer"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "bowl",
+        null
+      ],
+      [
+        "in",
+        "bowl",
+        "top_drawer"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(bowl)",
+        "in(bowl,top_drawer)"
+      ]
+    ],
+    "llm_atom_spatial": [],
+    "revision_note": "dropped hallucinated open(top_drawer): the drawer is initially open in the scene (audited path 'drawer_initially_open')"
+  },
+  {
+    "global_id": 24,
+    "suite": "libero_goal",
+    "description": "put the bowl on top of the cabinet",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "cabinet_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "bowl"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "bowl",
+                  "target": "cabinet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "bowl",
+        null
+      ],
+      [
+        "on",
+        "bowl",
+        "cabinet"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(bowl)",
+        "on(bowl,cabinet)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 25,
+    "suite": "libero_goal",
+    "description": "push the plate to the front of the stove",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "plate",
+        null
+      ],
+      [
+        "on",
+        "plate",
+        "main_table_stove_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "plate"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "plate",
+                  "target": "front_of_stove"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "plate",
+        null
+      ],
+      [
+        "on",
+        "plate",
+        "front_of_stove"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(plate)",
+        "on(plate,front_of_stove)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 26,
+    "suite": "libero_goal",
+    "description": "put the cream cheese in the bowl",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "cream_cheese",
+        null
+      ],
+      [
+        "on",
+        "cream_cheese",
+        "black_bowl"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "cream_cheese"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "cream_cheese",
+                  "target": "bowl"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "cream_cheese",
+        null
+      ],
+      [
+        "on",
+        "cream_cheese",
+        "bowl"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(cream_cheese)",
+        "on(cream_cheese,bowl)"
+      ]
+    ],
+    "llm_atom_spatial": [],
+    "revision_note": "in->on: BDDL ground truth places the cream-cheese box ON the bowl"
+  },
+  {
+    "global_id": 27,
+    "suite": "libero_goal",
+    "description": "turn on the stove",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "turnon",
+        null,
+        "stove"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "turnon",
+                  "target": "stove"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "turnon",
+        null,
+        "stove"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "turnon(stove)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 28,
+    "suite": "libero_goal",
+    "description": "put the bowl on the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "on",
+        "black_bowl",
+        "plate"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "bowl"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "bowl",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "bowl",
+        null
+      ],
+      [
+        "on",
+        "bowl",
+        "plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(bowl)",
+        "on(bowl,plate)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 29,
+    "suite": "libero_goal",
+    "description": "put the wine bottle on the rack",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "wine_bottle",
+        null
+      ],
+      [
+        "on",
+        "wine_bottle",
+        "wine_rack_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "wine_bottle"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "wine_bottle",
+                  "target": "rack"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "wine_bottle",
+        null
+      ],
+      [
+        "on",
+        "wine_bottle",
+        "rack"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(wine_bottle)",
+        "on(wine_bottle,rack)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 30,
+    "suite": "libero_10",
+    "description": "put both the alphabet soup and the tomato sauce in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "alphabet_soup",
+        null
+      ],
+      [
+        "in",
+        "alphabet_soup",
+        "basket_1_site"
+      ],
+      [
+        "pick",
+        "tomato_sauce",
+        null
+      ],
+      [
+        "in",
+        "tomato_sauce",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "object_1_then_object_2",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "alphabet_soup"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "alphabet_soup",
+                  "target": "basket"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "tomato_sauce"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "tomato_sauce",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "object_2_then_object_1",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "tomato_sauce"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "tomato_sauce",
+                  "target": "basket"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "alphabet_soup"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "alphabet_soup",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "alphabet_soup",
+        null
+      ],
+      [
+        "in",
+        "alphabet_soup",
+        "basket"
+      ],
+      [
+        "pick",
+        "tomato_sauce",
+        null
+      ],
+      [
+        "in",
+        "tomato_sauce",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(alphabet_soup)",
+        "in(alphabet_soup,basket)",
+        "pick(tomato_sauce)",
+        "in(tomato_sauce,basket)"
+      ],
+      [
+        "pick(tomato_sauce)",
+        "in(tomato_sauce,basket)",
+        "pick(alphabet_soup)",
+        "in(alphabet_soup,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 31,
+    "suite": "libero_10",
+    "description": "put both the cream cheese box and the butter in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "cream_cheese",
+        null
+      ],
+      [
+        "in",
+        "cream_cheese",
+        "basket_1_site"
+      ],
+      [
+        "pick",
+        "butter",
+        null
+      ],
+      [
+        "in",
+        "butter",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "object_1_then_object_2",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "cream_cheese_box"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "cream_cheese_box",
+                  "target": "basket"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "butter"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "butter",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "object_2_then_object_1",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "butter"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "butter",
+                  "target": "basket"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "cream_cheese_box"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "cream_cheese_box",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "cream_cheese_box",
+        null
+      ],
+      [
+        "in",
+        "cream_cheese_box",
+        "basket"
+      ],
+      [
+        "pick",
+        "butter",
+        null
+      ],
+      [
+        "in",
+        "butter",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(cream_cheese_box)",
+        "in(cream_cheese_box,basket)",
+        "pick(butter)",
+        "in(butter,basket)"
+      ],
+      [
+        "pick(butter)",
+        "in(butter,basket)",
+        "pick(cream_cheese_box)",
+        "in(cream_cheese_box,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 32,
+    "suite": "libero_10",
+    "description": "turn on the stove and put the moka pot on it",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "turnon",
+        null,
+        "stove"
+      ],
+      [
+        "pick",
+        "moka_pot",
+        null
+      ],
+      [
+        "on",
+        "moka_pot",
+        "stove_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "turnon",
+                  "target": "stove"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "moka_pot"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "moka_pot",
+                  "target": "stove"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "turnon",
+        null,
+        "stove"
+      ],
+      [
+        "pick",
+        "moka_pot",
+        null
+      ],
+      [
+        "on",
+        "moka_pot",
+        "stove"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "turnon(stove)",
+        "pick(moka_pot)",
+        "on(moka_pot,stove)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 33,
+    "suite": "libero_10",
+    "description": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "in",
+        "black_bowl",
+        "cabinet_1_site"
+      ],
+      [
+        "close",
+        null,
+        "cabinet_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "black_bowl"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "black_bowl",
+                  "target": "bottom_drawer"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "close",
+                  "target": "bottom_drawer"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "black_bowl",
+        null
+      ],
+      [
+        "in",
+        "black_bowl",
+        "bottom_drawer"
+      ],
+      [
+        "close",
+        null,
+        "bottom_drawer"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(black_bowl)",
+        "in(black_bowl,bottom_drawer)",
+        "close(bottom_drawer)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 34,
+    "suite": "libero_10",
+    "description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "mug",
+        null
+      ],
+      [
+        "on",
+        "mug",
+        "plate"
+      ],
+      [
+        "pick",
+        "yellow_mug",
+        null
+      ],
+      [
+        "on",
+        "yellow_mug",
+        "plate_b"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "white_mug_then_yellow_mug",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "white_mug"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "white_mug",
+                  "target": "left_plate"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "yellow_mug"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "yellow_mug",
+                  "target": "right_plate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "yellow_mug_then_white_mug",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "yellow_mug"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "yellow_mug",
+                  "target": "right_plate"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "white_mug"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "white_mug",
+                  "target": "left_plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "white_mug",
+        null
+      ],
+      [
+        "on",
+        "white_mug",
+        "left_plate"
+      ],
+      [
+        "pick",
+        "yellow_mug",
+        null
+      ],
+      [
+        "on",
+        "yellow_mug",
+        "right_plate"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(white_mug)",
+        "on(white_mug,left_plate)",
+        "pick(yellow_mug)",
+        "on(yellow_mug,right_plate)"
+      ],
+      [
+        "pick(yellow_mug)",
+        "on(yellow_mug,right_plate)",
+        "pick(white_mug)",
+        "on(white_mug,left_plate)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 35,
+    "suite": "libero_10",
+    "description": "pick up the book and place it in the back compartment of the caddy",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "black_book",
+        null
+      ],
+      [
+        "in",
+        "black_book",
+        "desk_caddy_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "book"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "book",
+                  "target": "back_compartment"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "book",
+        null
+      ],
+      [
+        "in",
+        "book",
+        "back_compartment"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(book)",
+        "in(book,back_compartment)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 36,
+    "suite": "libero_10",
+    "description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "mug",
+        null
+      ],
+      [
+        "on",
+        "mug",
+        "plate"
+      ],
+      [
+        "pick",
+        "chocolate_pudding",
+        null
+      ],
+      [
+        "on",
+        "chocolate_pudding",
+        "living_room_table_plate_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "object_1_then_object_2",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "white_mug"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "white_mug",
+                  "target": "plate"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "chocolate_pudding"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "chocolate_pudding",
+                  "target": "plate_right_region"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "object_2_then_object_1",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "chocolate_pudding"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "chocolate_pudding",
+                  "target": "plate_right_region"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "white_mug"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "white_mug",
+                  "target": "plate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "white_mug",
+        null
+      ],
+      [
+        "on",
+        "white_mug",
+        "plate"
+      ],
+      [
+        "pick",
+        "chocolate_pudding",
+        null
+      ],
+      [
+        "on",
+        "chocolate_pudding",
+        "plate_right_region"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(white_mug)",
+        "on(white_mug,plate)",
+        "pick(chocolate_pudding)",
+        "on(chocolate_pudding,plate_right_region)"
+      ],
+      [
+        "pick(chocolate_pudding)",
+        "on(chocolate_pudding,plate_right_region)",
+        "pick(white_mug)",
+        "on(white_mug,plate)"
+      ]
+    ],
+    "llm_atom_spatial": [],
+    "revision_note": "stack->on (BDDL truth); split role 'plate' into plate (body) and plate_right_region (BDDL right-of-plate site): one NL name, two physical referents"
+  },
+  {
+    "global_id": 37,
+    "suite": "libero_10",
+    "description": "put both the alphabet soup and the cream cheese box in the basket",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "alphabet_soup",
+        null
+      ],
+      [
+        "in",
+        "alphabet_soup",
+        "basket_1_site"
+      ],
+      [
+        "pick",
+        "cream_cheese",
+        null
+      ],
+      [
+        "in",
+        "cream_cheese",
+        "basket_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "object_1_then_object_2",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "alphabet_soup"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "alphabet_soup",
+                  "target": "basket"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "cream_cheese_box"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "cream_cheese_box",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "object_2_then_object_1",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "cream_cheese_box"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "cream_cheese_box",
+                  "target": "basket"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "alphabet_soup"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "alphabet_soup",
+                  "target": "basket"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "alphabet_soup",
+        null
+      ],
+      [
+        "in",
+        "alphabet_soup",
+        "basket"
+      ],
+      [
+        "pick",
+        "cream_cheese_box",
+        null
+      ],
+      [
+        "in",
+        "cream_cheese_box",
+        "basket"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(alphabet_soup)",
+        "in(alphabet_soup,basket)",
+        "pick(cream_cheese_box)",
+        "in(cream_cheese_box,basket)"
+      ],
+      [
+        "pick(cream_cheese_box)",
+        "in(cream_cheese_box,basket)",
+        "pick(alphabet_soup)",
+        "in(alphabet_soup,basket)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 38,
+    "suite": "libero_10",
+    "description": "put both moka pots on the stove",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "turnon",
+        null,
+        "stove"
+      ],
+      [
+        "pick",
+        "moka_pot",
+        null
+      ],
+      [
+        "on",
+        "moka_pot",
+        "stove_1_site"
+      ],
+      [
+        "pick",
+        "moka_pot_b",
+        null
+      ],
+      [
+        "on",
+        "moka_pot_b",
+        "stove_1_site"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "moka_pot_1_then_moka_pot_2",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "turnon",
+                  "target": "stove"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "moka_pot_1"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "moka_pot_1",
+                  "target": "stove"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "moka_pot_2"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "moka_pot_2",
+                  "target": "stove"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "moka_pot_2_then_moka_pot_1",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "turnon",
+                  "target": "stove"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "moka_pot_2"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "moka_pot_2",
+                  "target": "stove"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "moka_pot_1"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "on",
+                  "obj": "moka_pot_1",
+                  "target": "stove"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "turnon",
+        null,
+        "stove"
+      ],
+      [
+        "pick",
+        "moka_pot_1",
+        null
+      ],
+      [
+        "on",
+        "moka_pot_1",
+        "stove"
+      ],
+      [
+        "pick",
+        "moka_pot_2",
+        null
+      ],
+      [
+        "on",
+        "moka_pot_2",
+        "stove"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "turnon(stove)",
+        "pick(moka_pot_1)",
+        "on(moka_pot_1,stove)",
+        "pick(moka_pot_2)",
+        "on(moka_pot_2,stove)"
+      ],
+      [
+        "turnon(stove)",
+        "pick(moka_pot_2)",
+        "on(moka_pot_2,stove)",
+        "pick(moka_pot_1)",
+        "on(moka_pot_1,stove)"
+      ]
+    ],
+    "llm_atom_spatial": []
+  },
+  {
+    "global_id": 39,
+    "suite": "libero_10",
+    "description": "put the yellow and white mug in the microwave and close it",
+    "same_structure": true,
+    "error": null,
+    "audited_atoms": [
+      [
+        "pick",
+        "yellow_mug",
+        null
+      ],
+      [
+        "in",
+        "yellow_mug",
+        "microwave_1_site"
+      ],
+      [
+        "close",
+        null,
+        "microwave"
+      ]
+    ],
+    "llm_formula": {
+      "paths": [
+        {
+          "name": "only",
+          "stages": [
+            {
+              "atoms": [
+                {
+                  "pred": "pick",
+                  "obj": "yellow_and_white_mug"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "in",
+                  "obj": "yellow_and_white_mug",
+                  "target": "microwave"
+                }
+              ]
+            },
+            {
+              "atoms": [
+                {
+                  "pred": "close",
+                  "target": "microwave"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "llm_atoms": [
+      [
+        "pick",
+        "yellow_and_white_mug",
+        null
+      ],
+      [
+        "in",
+        "yellow_and_white_mug",
+        "microwave"
+      ],
+      [
+        "close",
+        null,
+        "microwave"
+      ]
+    ],
+    "llm_paths": [
+      [
+        "pick(yellow_and_white_mug)",
+        "in(yellow_and_white_mug,microwave)",
+        "close(microwave)"
+      ]
+    ],
+    "llm_atom_spatial": [],
+    "revision_note": "merged hallucinated yellow_mug+white_mug into the single yellow-and-white mug; dropped hallucinated turnon(microwave)"
+  }
+]
