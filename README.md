@@ -56,12 +56,6 @@ The pipeline has two stages:
 - NVIDIA CUDA runtime with eight GPUs; NVIDIA A100 80 GB GPUs are recommended
   for VLA training.
 
-## Real-World Deployment
-
-SpecRL also supports physical robot deployments. The reference real-world
-setup uses a Franka Research 3 manipulator, an Intel RealSense D455 global
-camera, and a wrist-mounted ZED Mini camera.
-
 ## Code Bundle
 
 This directory preserves the original repository-relative layout for the code
@@ -87,11 +81,8 @@ bash scripts/run_ppo_8gpu_SpecRL_V.sh goal
   metadata.
 - `llm_symbolic_parity_results_revised.json`: the role-level stage-plan table
   loaded and grounded at runtime.
-- `llm_symbolic_parity.py`: offline/online structural-parity evaluation
-  for the 40 LIBERO instructions. Online mode uses `--online`.
-
-Generated caches, backup files, logs, checkpoints, virtual environments, and
-model weights are intentionally excluded.
+- `llm_symbolic_parity.py`: online structural-parity evaluation
+  for the 40 LIBERO instructions.
 
 ## External runtime assets
 
@@ -100,13 +91,9 @@ environment variables:
 
 - the `.venv_embodied_openpi` training environment;
 - the `.yoloe_venv` YOLOE environment for visual training;
-- the OpenPI SFT checkpoint (`SFT_checkpoint` in the original scripts);
+- the OpenPI SFT checkpoint;
 - `OPENPI_DATA_HOME`;
 - the YOLOE weights;
-- an eight-GPU Linux/CUDA runtime and the LIBERO dependencies/assets.
+- the LIBERO dependencies/assets.
 
-For the standalone reward validation utilities, set `LIBERO_PATH` and
-`OPENVLA_REPO`; model-based validation additionally requires
-`OPENVLA_MODEL_PATH`. The training launchers require `OPENPI_DATA_HOME` to be
-set to the local OpenPI data directory.
 
