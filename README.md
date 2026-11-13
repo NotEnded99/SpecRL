@@ -56,44 +56,34 @@ The pipeline has two stages:
 - NVIDIA CUDA runtime with eight GPUs; NVIDIA A100 80 GB GPUs are recommended
   for VLA training.
 
-## Code Bundle
+## Quick Start & Usage
 
-This directory preserves the original repository-relative layout for the code
-used by these two launch commands:
+You can run the training experiments with:
 
 ```bash
+# 1. Privileged-state grounding (`SpecRL_P`)
 bash scripts/run_ppo_8gpu_SpecRL_P.sh
+
+# 2. Lightweight visual grounding (`SpecRL_V`)
 bash scripts/run_ppo_8gpu_SpecRL_V.sh goal
 ```
 
-`SpecRL_P` evaluates proposition satisfaction using privileged-state grounding;
-`SpecRL_V` evaluates it using lightweight visual grounding.
+## Repository Contents
+- `scripts/`: Training launchers and visual grounding service scripts.
+- `examples/`: Shared training entry points, runtime hooks, and configuration files.
+- `rlinf/`: Runtime source code required for SpecRL execution (pre-configured for LIBERO).
+- `llm_symbolic_parity.py`: Online structural-parity evaluation script for the LIBERO benchmark.
 
-## Included
+## External Assets & Environment Setup
+**Notice:** The training/visual environments and weight files will be released at a later date.
 
-- `scripts/`: the two top-level launchers and the YOLOE service launch/server.
-- `examples/embodiment/`: shared training entry points, AGM runtime hooks, and
-  the Hydra configurations selected by the two launchers.
-- `rlinf/`: the RLinf runtime source required by the two SpecRL launch paths.
-  Under `rlinf/envs`, only LIBERO and its shared vector/wrapper utilities are
-  retained; unrelated environment implementations are intentionally omitted.
-- `requirements/`, `pyproject.toml`, and `uv.lock`: dependency and installation
-  metadata.
-- `llm_symbolic_parity_results_revised.json`: the role-level stage-plan table
-  loaded and grounded at runtime.
-- `llm_symbolic_parity.py`: online structural-parity evaluation
-  for the 40 LIBERO instructions.
+Running this bundle requires supplying the following external assets and environment configurations:
 
-## External runtime assets
-
-Running this bundle requires supplying the following external assets and
-environment variables:
-
-- the `.venv_embodied_openpi` training environment;
-- the `.yoloe_venv` YOLOE environment for visual training;
-- the OpenPI SFT checkpoint;
-- `OPENPI_DATA_HOME`;
-- the YOLOE weights;
-- the LIBERO dependencies/assets.
+- `.venv_embodied_openpi` (training environment)
+- `.yoloe_venv` (YOLOE environment)
+- OpenPI SFT checkpoint
+- `OPENPI_DATA_HOME` environment variable
+- YOLOE weights
+- LIBERO benchmark dependencies and assets
 
 
